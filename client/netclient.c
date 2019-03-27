@@ -95,15 +95,6 @@ int main(int argc, char *argv[])
 	printf("%s\n",bufin);
     }
 
-    //if ((numbytes = recv(sockfd, buf, MAXDATASIZE-1, 0)) == -1) {
-        //perror("recv \n");
-        //exit(1);
-    //}
-
-    //buf[numbytes] = ' ';
-
-    //printf("client: received '%s' \n",buf);
-
     close(sockfd);
 
     return 0;
