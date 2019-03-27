@@ -135,13 +135,6 @@ int main(void)
 		}
 	}
 
-        //if (!fork()) { // тут начинается дочерний процесс
-            //close(sockfd); // дочернему процессу не нужен слушающий сокет
-            //if (send(new_fd, "Hello, world!", 13, 0) == -1)
-                //perror("send \n");
-            //close(new_fd);
-            //exit(0);
-	//}
 	close(sockfd);
         close(new_fd);  // а этот сокет больше не нужен родителю
     }
