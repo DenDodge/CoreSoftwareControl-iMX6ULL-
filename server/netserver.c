@@ -127,9 +127,13 @@ int main(void)
 		printf("MSG: %s\n", bufin);
 		switch(bufin[0]){
 			case '1': send(new_fd, "hi!", BUF_SIZE-1, 0);
-				  break;
+				break;
 			case '2': send(new_fd, "Nice to meet you! My name is server", BUF_SIZE-1, 0);
-				  break;
+				break;
+			case '3':
+				system("~/Documents/Diplom/CoreSoftwareControl-iMX6ULL-/testProject/testProject");
+
+				break;
 			default: send(new_fd, "not command", BUF_SIZE-1, 0);
 				 break;
 		}
