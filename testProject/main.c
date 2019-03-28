@@ -1,8 +1,7 @@
 #include <stdio.h>
 int main(void){
 
-	printf("Hello world!\n");
-	printf("Add line\n");
+	printf("All OK! testProject is open");
 
 	return 0;
 }
